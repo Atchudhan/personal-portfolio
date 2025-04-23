@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Linux Distributions & Flavours</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+            color: #1a237e;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #0277bd;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .distro-card {
+            background-color: #ffffff;
+            border: 2px solid #0277bd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .distro-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .distro-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .distro-card h2 {
+            color: #0277bd;
+            font-size: 1.8em;
+            margin-top: 10px;
+        }
+
+        .distro-card p {
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+
+        .btn-download {
+            display: inline-block;
+            background-color: #0277bd;
+            color: white;
+            padding: 12px 20px;
+            margin-top: 15px;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-download:hover {
+            background-color: #01579b;
+        }
+
+        footer {
+            background-color: #0277bd;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .distro-card {
+            animation: fadeInUp 0.6s ease-in-out;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Linux Distributions & Flavours</h1>
+    <p>Explore the World of Linux Distros</p>
+</header>
+
+<div class="container">
+    <!-- Distro Cards -->
+    <div class="distro-card">
+        <h2>Ubuntu</h2>
+        <p>Ubuntu is one of the most popular Linux distributions, known for its user-friendliness and solid community support.</p>
+        <a href="https://ubuntu.com/download" class="btn-download">Download Ubuntu</a>
+    </div>
+
+    <div class="distro-card">
+        <h2>Linux Mint</h2>
+        <p>Linux Mint is based on Ubuntu and is designed to be easy to use for users who are transitioning from Windows.</p>
+        <a href="https://linuxmint.com/download.php" class="btn-download">Download Linux Mint</a>
+    </div>
+
+    <div class="distro-card">
+        <h2>Debian</h2>
+        <p>Debian is one of the oldest and most stable Linux distributions. It is used by advanced users and developers.</p>
+        <a href="https://www.debian.org/distrib/" class="btn-download">Download Debian</a>
+    </div>
+
+    <div class="distro-card">
+        <h2>Arch Linux</h2>
+        <p>Arch Linux is a rolling release distro targeted at experienced Linux users who prefer simplicity and customization.</p>
+        <a href="https://www.archlinux.org/download/" class="btn-download">Download Arch Linux</a>
+    </div>
+
+    <div class="distro-card">
+        <h2>Fedora</h2>
+        <p>Fedora is a cutting-edge Linux distribution sponsored by Red Hat. It is known for having the latest software and features.</p>
+        <a href="https://getfedora.org/en/workstation/download/" class="btn-download">Download Fedora</a>
+    </div>
+
+    <div class="distro-card">
+        <h2>openSUSE</h2>
+        <p>openSUSE is a versatile and comprehensive Linux distribution, ideal for both development and enterprise environments.</p>
+        <a href="https://www.opensuse.org/download/" class="btn-download">Download openSUSE</a>
+    </div>
+
+    <div class="distro-card">
+        <h2>Manjaro</h2>
+        <p>Manjaro is a user-friendly distribution based on Arch Linux. It provides an easy way to enjoy Arch with a preconfigured environment.</p>
+        <a href="https://manjaro.org/download/" class="btn-download">Download Manjaro</a>
+    </div>
+
+    <div class="distro-card">
+        <h2>Slackware</h2>
+        <p>Slackware is one of the oldest Linux distributions, known for its simplicity, minimalism, and high stability.</p>
+        <a href="https://www.slackware.com/getslack/" class="btn-download">Download Slackware</a>
+    </div>
+
+    <div class="distro-card">
+        <h2>Kali Linux</h2>
+        <p>Kali Linux is a security-focused distribution that is widely used for penetration testing and security auditing.</p>
+        <a href="https://www.kali.org/get-kali/" class="btn-download">Download Kali Linux</a>
+    </div>
+
+    <div class="distro-card">
+        <h2>Zorin OS</h2>
+        <p>Zorin OS is a user-friendly Linux distribution that aims to make it easy for Windows users to transition to Linux.</p>
+        <a href="https://zorin.com/os/download/" class="btn-download">Download Zorin OS</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Linux Distributions & Flavours Blog | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

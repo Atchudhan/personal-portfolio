@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Linux Commands</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(120deg, #1e3c72, #2a5298);
+            color: white;
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 2s ease-in;
+        }
+        header {
+            background-color: #123456;
+            padding: 1rem;
+            text-align: center;
+            animation: slideDown 1s ease-out;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #fff;
+        }
+        section {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: auto;
+            animation: slideIn 1.5s ease-in;
+        }
+        .command {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            transition: transform 0.3s;
+        }
+        .command:hover {
+            transform: scale(1.03);
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        h2 {
+            color: #add8e6;
+        }
+        p {
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #0e2a47;
+            color: #ccc;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideDown {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateX(-100px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Basic Linux Commands</h1>
+    </header>
+    <section>
+        <p>Welcome to the ultimate guide of essential Linux commands! Each command here is explained in about 50 words, including syntax and usage, to help beginners and enthusiasts navigate Linux systems confidently.</p>
+
+        <!-- Begin 40 commands with 50-word detailed content -->
+        <div class="command">
+            <h2>1. sudo</h2>
+            <p>Allows users to run programs with the security privileges of another user (by default, the superuser). It's commonly used for administrative tasks such as installing software. Usage example: <code>sudo apt install package_name</code>. It requires authentication and logs every command run through it for security auditing.</p>
+        </div>
+        <div class="command">
+            <h2>2. pwd</h2>
+            <p>Prints the full pathname of the current working directory. It's helpful to confirm where you are within the Linux file system hierarchy. Simply type <code>pwd</code> to get an absolute path from the root (/). No options are necessary for basic use.</p>
+        </div>
+        <div class="command">
+            <h2>3. cd</h2>
+            <p>Changes the current directory to another. You can move using relative paths (e.g., <code>cd ../</code>) or absolute paths (e.g., <code>cd /home/user</code>). Typing <code>cd</code> without arguments takes you to your home directory. Essential for navigating the file system.</p>
+        </div>
+        <div class="command">
+            <h2>4. ls</h2>
+            <p>Lists directory contents. You can add options like <code>-l</code> (long format), <code>-a</code> (include hidden files), and <code>-h</code> (human-readable file sizes). Usage: <code>ls -lah</code>. It provides quick insight into file structure and permissions.</p>
+        </div>
+        <div class="command">
+            <h2>5. cat</h2>
+            <p>Concatenates and displays file content. It’s often used to view text files quickly. Example: <code>cat filename.txt</code>. You can also use it to combine multiple files or redirect output using <code>></code> and <code>>></code> operators.</p>
+        </div>
+        <div class="command">
+            <h2>6. cp</h2>
+            <p>Copies files or directories. Use <code>cp file.txt /destination/</code> to copy files and <code>cp -r folder /destination/</code> for directories. It's useful for backing up data or moving data between locations.</p>
+        </div>
+        <div class="command">
+            <h2>7. mv</h2>
+            <p>Moves or renames files and directories. Syntax: <code>mv oldname newname</code>. It’s useful for organizing files and renaming without duplication. For moving between directories, include a path: <code>mv file.txt /path/to/destination</code>.</p>
+        </div>
+        <div class="command">
+            <h2>8. mkdir</h2>
+            <p>Creates new directories. Add <code>-p</code> to create nested directories in a single command. Example: <code>mkdir -p /new/folder/path</code>. Ensure you have appropriate permissions in the target location.</p>
+        </div>
+        <div class="command">
+            <h2>9. rmdir</h2>
+            <p>Removes empty directories. It won’t work if the directory contains files. Use <code>rmdir directory</code> or <code>rmdir -p parent/child</code> to remove nested directories.</p>
+        </div>
+        <div class="command">
+            <h2>10. rm</h2>
+            <p>Deletes files and directories. Add <code>-r</code> for directories and <code>-f</code> to force deletion without prompt. Example: <code>rm -rf folder</code>. Be cautious—this action is irreversible unless backups exist.</p>
+        </div>
+
+        <div class="command">
+            <h2>11. touch</h2>
+            <p>Creates a new empty file or updates the timestamp of an existing file. Commonly used in scripting to create files quickly. Example: <code>touch newfile.txt</code>. You can also create multiple files at once using space-separated names.</p>
+        </div>
+        <div class="command">
+            <h2>12. locate</h2>
+            <p>Searches for files by name using a prebuilt index. Much faster than <code>find</code>, but may not reflect real-time changes unless updated with <code>updatedb</code>. Example: <code>locate file.txt</code>.</p>
+        </div>
+        <div class="command">
+            <h2>13. find</h2>
+            <p>Recursively searches directories for files matching given criteria such as name, type, or size. Example: <code>find /home -name file.txt</code>. Powerful for deep searches.</p>
+        </div>
+        <div class="command">
+            <h2>14. grep</h2>
+            <p>Searches for text patterns in files. Useful for logs and large text files. Example: <code>grep 'error' logfile.log</code>. Supports regular expressions and recursive search with <code>-r</code>.</p>
+        </div>
+        <div class="command">
+            <h2>15. df</h2>
+            <p>Shows disk usage of mounted filesystems. Add <code>-h</code> for human-readable format. Example: <code>df -h</code>. Useful to check if a partition is full.</p>
+        </div>
+        <div class="command">
+            <h2>16. du</h2>
+            <p>Displays size of directories and files. Use <code>du -sh folder/</code> to get a summary of folder size. Helpful for tracking down disk space usage.</p>
+        </div>
+        <div class="command">
+            <h2>17. head</h2>
+            <p>Displays the first few lines of a file. Default is 10 lines. Use <code>-n</code> to specify line count. Example: <code>head -n 5 file.txt</code>.</p>
+        </div>
+        <div class="command">
+            <h2>18. tail</h2>
+            <p>Displays the last lines of a file. Use <code>tail -f</code> to follow updates live, great for monitoring logs. Example: <code>tail -f /var/log/syslog</code>.</p>
+        </div>
+        <div class="command">
+            <h2>19. diff</h2>
+            <p>Compares two files line by line. Useful in development to detect changes. Example: <code>diff old.txt new.txt</code>. Use <code>-u</code> for unified format.</p>
+        </div>
+        <div class="command">
+            <h2>20. tar</h2>
+            <p>Archives files into a .tar file. Add <code>-z</code> for gzip compression. Example: <code>tar -czvf archive.tar.gz folder/</code>. Also used to extract archives.</p>
+        </div>
+        <div class="command">
+            <h2>21. chmod</h2>
+            <p>Changes file permissions. Use numbers (e.g., 755) or symbols (e.g., u+x). Example: <code>chmod 755 script.sh</code>. Essential for setting execute permissions.</p>
+        </div>
+        <div class="command">
+            <h2>22. chown</h2>
+            <p>Changes the owner and group of a file. Example: <code>chown user:group file.txt</code>. Requires sudo. Useful when managing shared environments.</p>
+        </div>
+        <div class="command">
+            <h2>23. jobs</h2>
+            <p>Displays background jobs started from the current terminal. You can bring jobs to foreground using <code>fg</code>. Useful in multitasking with terminal processes.</p>
+        </div>
+        <div class="command">
+            <h2>24. kill</h2>
+            <p>Sends a signal to a process, usually to stop it. Use <code>kill PID</code> or <code>kill -9 PID</code> to forcefully terminate. Check PID using <code>ps</code>.</p>
+        </div>
+        <div class="command">
+            <h2>25. ping</h2>
+            <p>Tests connectivity to another host. It sends ICMP echo requests and shows the response time. Example: <code>ping google.com</code>.</p>
+        </div>
+        <div class="command">
+            <h2>26. wget</h2>
+            <p>Downloads files from the web via terminal. Works with HTTP, HTTPS, and FTP. Example: <code>wget https://example.com/file.zip</code>. Can resume downloads with <code>-c</code>.</p>
+        </div>
+        <div class="command">
+            <h2>27. uname</h2>
+            <p>Shows system information like kernel name, OS, and architecture. Example: <code>uname -a</code>. Useful for checking system specs.</p>
+        </div>
+        <div class="command">
+            <h2>28. top</h2>
+            <p>Displays live system resource usage and running processes. Press <code>q</code> to quit. Provides CPU, memory, and process monitoring.</p>
+        </div>
+        <div class="command">
+            <h2>29. history</h2>
+            <p>Shows the list of previously executed commands in the shell. Useful for recalling or reusing commands. Clear history with <code>history -c</code>.</p>
+        </div>
+        <div class="command">
+            <h2>30. man</h2>
+            <p>Displays the manual page for commands. Example: <code>man ls</code>. Learn options and syntax for any Linux command.</p>
+        </div>
+        <div class="command">
+            <h2>31. echo</h2>
+            <p>Prints strings to the terminal. Often used in scripts for output. Example: <code>echo "Hello World"</code>.</p>
+        </div>
+        <div class="command">
+            <h2>32. zip/unzip</h2>
+            <p>Compresses (<code>zip</code>) and extracts (<code>unzip</code>) zip files. Example: <code>zip archive.zip file.txt</code> and <code>unzip archive.zip</code>.</p>
+        </div>
+        <div class="command">
+            <h2>33. hostname</h2>
+            <p>Displays or sets the system hostname. Example: <code>hostname</code>. Useful in networking configurations and system identification.</p>
+        </div>
+        <div class="command">
+            <h2>34. useradd/userdel</h2>
+            <p>Adds or deletes user accounts. Use <code>useradd username</code> and <code>userdel username</code>. Requires root privileges.</p>
+        </div>
+        <div class="command">
+            <h2>35. apt-get</h2>
+            <p>Package management command for Debian-based systems. Example: <code>sudo apt-get install packagename</code>. Use <code>update</code> and <code>upgrade</code> to manage system packages.</p>
+        </div>
+        <div class="command">
+            <h2>36. nano/vi/jed</h2>
+            <p>Text editors used in the terminal. <code>nano</code> is user-friendly, <code>vi</code> is powerful but complex. Use <code>nano file.txt</code> to start editing quickly.</p>
+        </div>
+        <div class="command">
+            <h2>37. alias/unalias</h2>
+            <p>Create shortcuts for commands using <code>alias</code>. Remove them with <code>unalias</code>. Example: <code>alias ll='ls -la'</code>.</p>
+        </div>
+        <div class="command">
+            <h2>38. su</h2>
+            <p>Switches to another user account. Use <code>su - username</code> for login shell. Default is root if no username is provided.</p>
+        </div>
+        <div class="command">
+            <h2>39. htop</h2>
+            <p>An interactive process viewer, similar to <code>top</code> but with color and easier navigation. Use arrow keys and function keys for controls.</p>
+        </div>
+        <div class="command">
+            <h2>40. ps</h2>
+            <p>Displays a snapshot of active processes. Use <code>ps aux</code> to see all system processes with detailed information.</p>
+        </div>
+
+        <p style="margin-top: 2rem; text-align: center; font-style: italic;">Thank you! Share this page with your friends who are interested in Linux!</p>
+    </section>
+    <footer>
+        &copy; 2025 Linux Learner's Blog
+    </footer>
+</body>
+</html>
