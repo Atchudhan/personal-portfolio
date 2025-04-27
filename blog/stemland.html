@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover STEM Land in Auroville</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to bottom right, #cce7ff, #e6f0ff);
+            color: #003366;
+            overflow-x: hidden;
+        }
+        header {
+            background: radial-gradient(circle at center, #007bff, #003366);
+            color: white;
+            padding: 6rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        header h1 {
+            font-size: 3rem;
+            animation: zoomIn 2s ease forwards;
+        }
+        header p {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            opacity: 0;
+            animation: fadeSlideIn 3s ease forwards;
+            animation-delay: 1s;
+        }
+        @keyframes zoomIn {
+            0% { transform: scale(0.5); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        @keyframes fadeSlideIn {
+            0% { transform: translateY(50px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+        main {
+            padding: 2rem;
+            max-width: 900px;
+            margin: auto;
+            animation: fadeIn 2s ease-in;
+        }
+        h1, h2, h3 {
+            color: #003366;
+        }
+        .highlight {
+            background: #b3d9ff;
+            padding: 0.5rem;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+        .highlight:hover {
+            background: #80bfff;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .feature {
+            background: white;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .feature:hover {
+            transform: translateY(-10px);
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #003366;
+            color: white;
+            animation: slideUp 1s ease-out;
+        }
+        @keyframes slideDown {
+            from { transform: translateY(-100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes slideUp {
+            from { transform: translateY(100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Discover STEM Land in Auroville</h1>
+        <p>A revolutionary space where learning is living</p>
+    </header>
+
+    <main>
+        <section>
+            <p>Nested in the serene community of <span class="highlight">Auroville</span>, <strong>STEM Land</strong> stands as a shining example of an innovative educational model that encourages exploration, curiosity, and real-world problem-solving.</p>
+        </section>
+
+        <section>
+            <h2>How STEM Land Redefines Learning</h2>
+            <p>Traditional classrooms are a thing of the past here. Students embrace a <span class="highlight">self-directed</span> journey, where they set their own goals and collaborate to achieve them. Learning becomes an adventure rather than a task.</p>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <h3>Self-paced Learning</h3>
+                <p>No competition, no rush. Every learner finds their own path at their own speed.</p>
+            </div>
+            <div class="feature">
+                <h3>Freedom & Responsibility</h3>
+                <p>Students have the freedom to choose their projects and the responsibility to complete them.</p>
+            </div>
+            <div class="feature">
+                <h3>Technology as a Tool</h3>
+                <p>From coding to robotics, technology empowers innovation and creativity.</p>
+            </div>
+            <div class="feature">
+                <h3>Values-Driven Education</h3>
+                <p>Integrity, teamwork, and equality are at the core of every lesson.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Special Projects and Innovations</h2>
+            <p>STEM Land hosts numerous fascinating projects such as building solar-powered devices, programming AI robots, creating sustainable models, and exploring mathematical theories through interactive experiments. These projects enhance problem-solving skills and instill an entrepreneurial spirit among learners.</p>
+        </section>
+
+        <section>
+            <h2>Workshops and Community Events</h2>
+            <p>Beyond regular activities, STEM Land organizes vibrant workshops, hackathons, and community-driven events that bridge gaps between education, society, and innovation. Visitors, volunteers, and enthusiasts from around the world come to collaborate and learn.</p>
+        </section>
+
+        <section>
+            <p>At <strong>STEM Land</strong>, adults and children learn side-by-side, building a community where knowledge is shared freely and respect is mutual. Here, <em>learning isn’t preparation for life; it is life itself</em>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Visit STEM Land | Experience the Future of Education</p>
+    </footer>
+
+</body>
+</html>
