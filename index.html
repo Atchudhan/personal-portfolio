@@ -29,6 +29,38 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+  <style>
+    /* Spinner keyframes */
+@keyframes spinner {
+  to { transform: rotate(360deg); }
+}
+
+/* When we’re submitting, turn the button into a spinner */
+.button-loading {
+  position: relative;
+  color: transparent !important;
+  pointer-events: none;
+}
+.button-loading::after {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1em;
+  height: 1em;
+  margin-top: -0.5em;
+  margin-left: -0.5em;
+  border: 2px solid currentColor;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spinner 0.6s linear infinite;
+  /* you can tweak the color here if you like: */
+  color: #fff;
+}
+
+  </style>
 </head>
 
 <body>
@@ -49,7 +81,7 @@
           <li><a class="nav-link scrollto " href="index.html/#work">Projects</a></li>
           <li><a class="nav-link scrollto " href="index.html/#blog">Blog</a></li>
           <li><a class="nav-link scrollto " href="index.html/#Achivements">Achivements</a></li>
-      <!--<li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+          <!--<li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Blockchain</a></li>
               <li><a href="#">Linux</a></li>
@@ -72,7 +104,9 @@
         <div class="container">
           <!--<p class="display-6 color-d">Hello, world!</p>-->
           <h1 class="hero-title mb-4">I am Atchudhan</h1>
-          <p class="hero-subtitle"><span class="typed" data-typed-items="Web 3.0,Quantum,Cloud,Machine Learning,Artificial Inteligence,IOT,Photographer"></span></p>
+          <p class="hero-subtitle"><span class="typed"
+              data-typed-items="Web 3.0,Quantum,Cloud,Machine Learning,Artificial Inteligence,IOT,Photographer"></span>
+          </p>
           <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
         </div>
       </div>
@@ -102,8 +136,11 @@
                         <p><span class="title-s">Phone: </span> <span>(+91) 75300 87588</span></p>
                         <p><span class="title-s">DOB: </span> <span>17/12/2002</span></p>
                         <p><span class="title-s">Profile: </span> <span>Developer</span></p>
-                        <p><span class="title-s">Github: </span> <span><a href="https://github.com/Atchudhan">https://github.com/Atchudhan</a></span></p>
-                        <p><span class="title-s">Linkedin: </span> <span><a href="linkedin.com/in/atchudhan-s-6b60a6284">linkedin.com/in/atchudhan-s-568a13193</a></span></p>
+                        <p><span class="title-s">Github: </span> <span><a
+                              href="https://github.com/Atchudhan">https://github.com/Atchudhan</a></span></p>
+                        <p><span class="title-s">Linkedin: </span> <span><a
+                              href="linkedin.com/in/atchudhan-s-6b60a6284">linkedin.com/in/atchudhan-s-568a13193</a></span>
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -111,63 +148,78 @@
                     <p class="title-s">Skill</p>
                     <span>HTML</span> <span class="pull-right">90%</span>
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90"
+                        aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <span>CSS3</span> <span class="pull-right">85%</span>
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85"
+                        aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <span>PHP</span> <span class="pull-right">80%</span>
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80"
+                        aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <span>JAVASCRIPT</span> <span class="pull-right">90%</span>
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90"
+                        aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <span>Python</span> <span class="pull-right">80%</span>
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80"
+                        aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <span>Linux</span> <span class="pull-right">83%</span>
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 83%" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" style="width: 83%" aria-valuenow="83"
+                        aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <span>Web 3.0</span> <span class="pull-right">72%</span>
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 72%" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" style="width: 72%" aria-valuenow="72"
+                        aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <span>Cloud</span> <span class="pull-right">70%</span>
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70"
+                        aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <span>IOT</span> <span class="pull-right">80%</span>
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80"
+                        aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <span>ReactJS</span> <span class="pull-right">75%</span>
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"
+                        aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <span>Node</span> <span class="pull-right">78%</span>
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" style="width: 78%" aria-valuenow="78"
+                        aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <span>Git</span> <span class="pull-right">93%</span>
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 93%" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" style="width: 93%" aria-valuenow="93"
+                        aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <span>Go</span> <span class="pull-right">87%</span>
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 87%" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" style="width: 87%" aria-valuenow="87"
+                        aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <span>MOJO</span> <span class="pull-right">85%</span>
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85"
+                        aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <span>Photography</span> <span class="pull-right">88%</span>
                     <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 88%" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" style="width: 88%" aria-valuenow="88"
+                        aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </div>
                 </div>
@@ -179,60 +231,60 @@
                       </h5>
                     </div>
                     <p class="lead" class="justify-text" style="text-align: justify;">
-                      My name is ATCHUDHAN S, I stand for love and peace for myself and others, 
-                      I am deeply committed to enhancing my working capacities 
-                      and professional skills. My goal is to increase business 
-                      efficiencies and serve my organization in the best possible 
-                      way. This commitment stems from a deep-seated determination 
-                      and dedication to my work. I believe that with sheer 
-                      determination and commitment, one can overcome any obstacle 
+                      My name is ATCHUDHAN S, I stand for love and peace for myself and others,
+                      I am deeply committed to enhancing my working capacities
+                      and professional skills. My goal is to increase business
+                      efficiencies and serve my organization in the best possible
+                      way. This commitment stems from a deep-seated determination
+                      and dedication to my work. I believe that with sheer
+                      determination and commitment, one can overcome any obstacle
                       and achieve any goal.
                     <p class="lead" class="justify-text" style="text-align: justify;">
-                      In my pursuit of excellence, I aim to achieve great heights 
-                      towards organizational goals. My ambition is not just to 
-                      succeed, but to become the best in the organization. I believe 
-                      that this can be achieved through team spirit and practical 
-                      creativity. Working in a team fosters a sense of camaraderie 
-                      and mutual respect, which I believe is crucial for any 
-                      organization's success. Moreover, practical creativity allows 
-                      me to come up with innovative solutions to problems, thereby 
+                      In my pursuit of excellence, I aim to achieve great heights
+                      towards organizational goals. My ambition is not just to
+                      succeed, but to become the best in the organization. I believe
+                      that this can be achieved through team spirit and practical
+                      creativity. Working in a team fosters a sense of camaraderie
+                      and mutual respect, which I believe is crucial for any
+                      organization's success. Moreover, practical creativity allows
+                      me to come up with innovative solutions to problems, thereby
                       contributing to the organization's growth.
                     </p>
                     <p class="lead" class="justify-text" style="text-align: justify;">
-                      My approach to work is disciplined, organized, and progressive. 
-                      I believe that discipline is the key to success, as it instills 
-                      a sense of responsibility and commitment. Being organized allows 
-                      me to manage my tasks efficiently and effectively, ensuring that 
-                      no detail is overlooked. A progressive approach to work means 
-                      that I am always looking for ways to improve and evolve, which 
+                      My approach to work is disciplined, organized, and progressive.
+                      I believe that discipline is the key to success, as it instills
+                      a sense of responsibility and commitment. Being organized allows
+                      me to manage my tasks efficiently and effectively, ensuring that
+                      no detail is overlooked. A progressive approach to work means
+                      that I am always looking for ways to improve and evolve, which
                       I believe is crucial in today's fast-paced world.
                     </p>
                     <p class="lead" class="justify-text" style="text-align: justify;">
-                      Sincerity, hard work, and utmost endeavors are the pillars 
-                      of my work ethic. I am sincere in my efforts and work hard 
-                      to achieve my goals. I put my utmost endeavors into every task 
-                      entrusted to me, ensuring that I give it my all. I believe that 
-                      these qualities are essential for success and I strive to uphold 
+                      Sincerity, hard work, and utmost endeavors are the pillars
+                      of my work ethic. I am sincere in my efforts and work hard
+                      to achieve my goals. I put my utmost endeavors into every task
+                      entrusted to me, ensuring that I give it my all. I believe that
+                      these qualities are essential for success and I strive to uphold
                       them in all my professional endeavors.
                     </p>
                     <p class="lead" class="justify-text" style="text-align: justify;">
-                      Apart from my professional life, I am also an open-source enthusiast 
-                      and have been a member of the Free Software Hardware Movement (FSHM) 
-                      for the past three years. I have a deep love for Python and enjoy 
-                      sharing my knowledge with others. I believe that knowledge is meant 
-                      to be shared, and I derive great satisfaction from teaching others. 
-                      In line with this belief, I also take free technical classes at weekends 
-                      for other students. This not only allows me to share my knowledge but 
+                      Apart from my professional life, I am also an open-source enthusiast
+                      and have been a member of the Free Software Hardware Movement (FSHM)
+                      for the past three years. I have a deep love for Python and enjoy
+                      sharing my knowledge with others. I believe that knowledge is meant
+                      to be shared, and I derive great satisfaction from teaching others.
+                      In line with this belief, I also take free technical classes at weekends
+                      for other students. This not only allows me to share my knowledge but
                       also helps me learn from others and improve my own skills.
                     </p>
                     <p class="lead" class="justify-text" style="text-align: justify;">
-                      In conclusion, I am a dedicated professional with a passion for learning 
-                      and sharing knowledge. I am committed to enhancing my skills and serving 
-                      my organization to the best of my abilities. I believe in the power of 
-                      team spirit, practical creativity, and hard work, and I strive to uphold 
-                      these values in all my endeavors. Whether it's in my professional life or 
-                      my personal pursuits, I am always looking for ways to learn, grow, and contribute. 
-                      I am excited about the future and look forward to continuing my journey of learning 
+                      In conclusion, I am a dedicated professional with a passion for learning
+                      and sharing knowledge. I am committed to enhancing my skills and serving
+                      my organization to the best of my abilities. I believe in the power of
+                      team spirit, practical creativity, and hard work, and I strive to uphold
+                      these values in all my endeavors. Whether it's in my professional life or
+                      my personal pursuits, I am always looking for ways to learn, grow, and contribute.
+                      I am excited about the future and look forward to continuing my journey of learning
                       and growth.
                     </p>
                   </div>
@@ -254,7 +306,7 @@
                 Technology
               </h3>
               <p class="subtitle-a">
-                The application of knowledge to reach practical goals in a specifiable and 
+                The application of knowledge to reach practical goals in a specifiable and
                 reproducible way.
               </p>
               <div class="line-mf"></div>
@@ -270,8 +322,8 @@
               <div class="service-content">
                 <h2 class="s-title">Web Design</h2>
                 <p class="s-description justify-text" style="text-align: justify;">
-                  I am a positive, enthusiastic and competent Web Developer who, over the years, has 
-                  built up a diverse range of skills, qualities and attributes that guarantee. 
+                  I am a positive, enthusiastic and competent Web Developer who, over the years, has
+                  built up a diverse range of skills, qualities and attributes that guarantee.
                   I will perform highly in this role.
                 </p>
               </div>
@@ -285,9 +337,9 @@
               <div class="service-content">
                 <h2 class="s-title">Web Development</h2>
                 <p class="s-description justify-text" style="text-align: justify;">
-                  Web development is the work involved in developing a website for the 
-                  Internet (World Wide Web) or an intranet (a private network).Web development can 
-                  range from developing a simple single static page of plain text to complex web 
+                  Web development is the work involved in developing a website for the
+                  Internet (World Wide Web) or an intranet (a private network).Web development can
+                  range from developing a simple single static page of plain text to complex web
                   applications, electronic businesses, and social network services.
                 </p>
               </div>
@@ -301,8 +353,8 @@
               <div class="service-content">
                 <h2 class="s-title">Photography</h2>
                 <p class="s-description justify-text" style="text-align: justify;">
-                  Photography is the art, application, and practice of creating durable images 
-                  by recording light, either electronically by means of an image sensor, or chemically 
+                  Photography is the art, application, and practice of creating durable images
+                  by recording light, either electronically by means of an image sensor, or chemically
                   by means of a light-sensitive material such as photographic film.
                 </p>
               </div>
@@ -316,9 +368,9 @@
               <div class="service-content">
                 <h2 class="s-title">Blockchain</h2>
                 <p class="s-description justify-text" style="text-align: justify;">
-                  Blockchain is the backbone Technology of Digital CryptoCurrency BitCoin. 
-                  The blockchain is a distributed database of records of all transactions or 
-                  digital event that have been executed and shared among participating parties. 
+                  Blockchain is the backbone Technology of Digital CryptoCurrency BitCoin.
+                  The blockchain is a distributed database of records of all transactions or
+                  digital event that have been executed and shared among participating parties.
                   Each transaction verified by the majority of participants of the system.
                 </p>
               </div>
@@ -340,23 +392,23 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-calendar4-week"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Marketing Technology</h2>
-                <p class="s-description justify-text" style="text-align: justify;">
-                  Marketing technology (also known as martech) is a set of software solutions 
-                  used by marketing leaders to support mission-critical business objectives and 
-                  drive innovation within their organizations.
-                </p>
+          <div class=" col-md-4">
+                <div class="service-box">
+                  <div class="service-ico">
+                    <span class="ico-circle"><i class="bi bi-calendar4-week"></i></span>
+                  </div>
+                  <div class="service-content">
+                    <h2 class="s-title">Marketing Technology</h2>
+                    <p class="s-description justify-text" style="text-align: justify;">
+                      Marketing technology (also known as martech) is a set of software solutions
+                      used by marketing leaders to support mission-critical business objectives and
+                      drive innovation within their organizations.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
     </section><!-- End Services Section -->
 
     <!-- ======= Counter Section ======= -->
@@ -370,7 +422,8 @@
                 <span class="ico-circle"><i class="bi bi-check"></i></span>
               </div>
               <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="21" data-purecounter-duration="1" class="counter purecounter"></p>
+                <p data-purecounter-start="0" data-purecounter-end="21" data-purecounter-duration="1"
+                  class="counter purecounter"></p>
                 <span class="counter-text">WORKS COMPLETED</span>
               </div>
             </div>
@@ -381,7 +434,8 @@
                 <span class="ico-circle"><i class="bi bi-journal-richtext"></i></span>
               </div>
               <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="counter purecounter"></p>
+                <p data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1"
+                  class="counter purecounter"></p>
                 <span class="counter-text">YEARS OF EXPERIENCE</span>
               </div>
             </div>
@@ -392,7 +446,8 @@
                 <span class="ico-circle"><i class="bi bi-people"></i></span>
               </div>
               <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="1" class="counter purecounter"></p>
+                <p data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="1"
+                  class="counter purecounter"></p>
                 <span class="counter-text">TOTAL CLIENTS</span>
               </div>
             </div>
@@ -403,7 +458,8 @@
                 <span class="ico-circle"><i class="bi bi-award"></i></span>
               </div>
               <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="17" data-purecounter-duration="1" class="counter purecounter"></p>
+                <p data-purecounter-start="0" data-purecounter-end="17" data-purecounter-duration="1"
+                  class="counter purecounter"></p>
                 <span class="counter-text">AWARD WON</span>
               </div>
             </div>
@@ -431,7 +487,8 @@
         <div class="row">
           <div class="col-md-4">
             <div class="work-box">
-              <a href="assets/img/traffic violation system.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <a href="assets/img/traffic violation system.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox">
                 <div class="work-img">
                   <img src="assets/img/traffic violation system.jpg" alt="" class="img-fluid">
                 </div>
@@ -527,7 +584,8 @@
           </div>
           <div class="col-md-4">
             <div class="work-box">
-              <a href="assets/img/Smart Contract Auction System.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <a href="assets/img/Smart Contract Auction System.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox">
                 <div class="work-img">
                   <img src="assets/img/Smart Contract Auction System.jpg" alt="" class="img-fluid">
                 </div>
@@ -551,7 +609,8 @@
           </div>
           <div class="col-md-4">
             <div class="work-box">
-              <a href="assets/img/application using randomness.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <a href="assets/img/application using randomness.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox">
                 <div class="work-img">
                   <img src="assets/img/application using randomness.jpg" alt="" class="img-fluid">
                 </div>
@@ -599,7 +658,8 @@
           </div>
           <div class="col-md-4">
             <div class="work-box">
-              <a href="assets/img/Realtime-On-Chain-Notifications.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <a href="assets/img/Realtime-On-Chain-Notifications.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox">
                 <div class="work-img">
                   <img src="assets/img/Realtime-On-Chain-Notifications.jpg" alt="" class="img-fluid">
                 </div>
@@ -623,7 +683,8 @@
           </div>
           <div class="col-md-4">
             <div class="work-box">
-              <a href="assets/img/Similarity-Service-In-Marketplace-For-NFT-Metadata.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <a href="assets/img/Similarity-Service-In-Marketplace-For-NFT-Metadata.jpg"
+                data-gallery="portfolioGallery" class="portfolio-lightbox">
                 <div class="work-img">
                   <img src="assets/img/Similarity-Service-In-Marketplace-For-NFT-Metadata.jpg" alt="" class="img-fluid">
                 </div>
@@ -647,7 +708,8 @@
           </div>
           <div class="col-md-4">
             <div class="work-box">
-              <a href="assets/img/Smart Contract Auction System.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <a href="assets/img/Smart Contract Auction System.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox">
                 <div class="work-img">
                   <img src="assets/img/Smart Contract Auction System.jpg" alt="" class="img-fluid">
                 </div>
@@ -669,7 +731,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="col-md-4">
             <div class="work-box">
               <a href="assets/img/pc spam detection.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
@@ -754,7 +816,9 @@
                     </div>
                     <div class="content-test">
                       <p class="description lead">
-                        I am deeply committed to enhancing my working capacities and professional skills. My goal is to increase business efficiencies. I believe that with sheer determination and commitment, one can overcome any obstacle and achieve any goal.
+                        I am deeply committed to enhancing my working capacities and professional skills. My goal is to
+                        increase business efficiencies. I believe that with sheer determination and commitment, one can
+                        overcome any obstacle and achieve any goal.
                       </p>
                     </div>
                   </div>
@@ -800,10 +864,11 @@
                     <h6 class="category">IoT</h6>
                   </div>
                 </div>
-                <h3 class="card-title" style="text-align: center;"><a href="./blog/IOT.html">Internet Of Things(IOT)</a></h3>
+                <h3 class="card-title" style="text-align: center;"><a href="./blog/IOT.html">Internet Of Things(IOT)</a>
+                </h3>
                 <p class="card-description justify-text" style="text-align: justify;">
-                  The Internet of Things (IoT) describes the network of physical objects—“things”—that 
-                  are embedded with sensors, software, and other technologies for the purpose of connecting and 
+                  The Internet of Things (IoT) describes the network of physical objects—“things”—that
+                  are embedded with sensors, software, and other technologies for the purpose of connecting and
                   exchanging data with other devices and systems over the internet.
                 </p>
               </div>
@@ -831,11 +896,12 @@
                     <h6 class="category">LINUX COMMANDS</h6>
                   </div>
                 </div>
-                <h3 class="card-title" style="text-align: center;"><a href="./blog/linux command.html">BASIC COMMANDS IN LINUX</a></h3>
+                <h3 class="card-title" style="text-align: center;"><a href="./blog/linux command.html">BASIC COMMANDS IN
+                    LINUX</a></h3>
                 <p class="card-description justify-text" style="text-align: justify;">
-                  Linux® is an open source operating system (OS). An operating system is the 
-                  software that directly manages a system's hardware and resources, like CPU, 
-                  memory, and storage. The OS sits between applications and hardware and makes the 
+                  Linux® is an open source operating system (OS). An operating system is the
+                  software that directly manages a system's hardware and resources, like CPU,
+                  memory, and storage. The OS sits between applications and hardware and makes the
                   connections between all of your software and the physical resources that do the work.
                 </p>
               </div>
@@ -865,7 +931,9 @@
                 </div>
                 <h3 class="card-title" style="text-align: center;"><a href="./blog/ipadd.html">IP Address</a></h3>
                 <p class="card-description justify-text" style="text-align: justify;">
-                  An IP address, or Internet Protocol address, is a series of numbers that identifies any device on a network. Computers use IP addresses to communicate with each other both over the internet as well as on other networks.
+                  An IP address, or Internet Protocol address, is a series of numbers that identifies any device on a
+                  network. Computers use IP addresses to communicate with each other both over the internet as well as
+                  on other networks.
                 </p>
               </div>
               <div class="card-footer">
@@ -892,9 +960,13 @@
                     <h6 class="category">Linux Distros</h6>
                   </div>
                 </div>
-                <h3 class="card-title" style="text-align: center;"><a href="./blog/linuxdestro.html">Linux Distrubution</a></h3>
+                <h3 class="card-title" style="text-align: center;"><a href="./blog/linuxdestro.html">Linux
+                    Distrubution</a></h3>
                 <p class="card-description justify-text" style="text-align: justify;">
-                  Linux can pose an overwhelming complexity to new users. But then, it’s not Linux itself that brings this complexity. Rather, it’s the “newness” factor that causes this. Not getting nostalgic, but remembering my first time with Linux, I didn’t even know what to expect. I liked it. But it was an upstream swim for me initially.
+                  Linux can pose an overwhelming complexity to new users. But then, it’s not Linux itself that brings
+                  this complexity. Rather, it’s the “newness” factor that causes this. Not getting nostalgic, but
+                  remembering my first time with Linux, I didn’t even know what to expect. I liked it. But it was an
+                  upstream swim for me initially.
                 </p>
               </div>
               <div class="card-footer">
@@ -923,7 +995,8 @@
                 </div>
                 <h3 class="card-title" style="text-align: center;"><a href="./blog/web3.html">Web 3.0</a></h3>
                 <p class="card-description justify-text" style="text-align: justify;">
-                  It would certainly be a much different, maybe even desirable -- if a little creepy -- internet experience. Yet it could someday be the reality of Web 3.0, the next version of the web.
+                  It would certainly be a much different, maybe even desirable -- if a little creepy -- internet
+                  experience. Yet it could someday be the reality of Web 3.0, the next version of the web.
                 </p>
               </div>
               <div class="card-footer">
@@ -952,7 +1025,8 @@
                 </div>
                 <h3 class="card-title" style="text-align: center;"><a href="./blog/load.html">Load Balancer</a></h3>
                 <p class="card-description justify-text" style="text-align: justify;">
-                  A load balancer is a physical device or software process in a server network that analyzes incoming user requests and spreads them across servers to make sure that no server is overloaded.
+                  A load balancer is a physical device or software process in a server network that analyzes incoming
+                  user requests and spreads them across servers to make sure that no server is overloaded.
                 </p>
               </div>
               <div class="card-footer">
@@ -981,7 +1055,9 @@
                 </div>
                 <h3 class="card-title" style="text-align: center;"><a href="./blog/vipasana.html">VIPASSANA</a></h3>
                 <p class="card-description justify-text" style="text-align: justify;">
-                  Attending a Vipassana course was one of the most challenging and rewarding experiences of my life. The lessons I learned will stay with me for years to come, and I highly recommend it to anyone seeking inner peace and self-awareness.                </p>
+                  Attending a Vipassana course was one of the most challenging and rewarding experiences of my life. The
+                  lessons I learned will stay with me for years to come, and I highly recommend it to anyone seeking
+                  inner peace and self-awareness. </p>
               </div>
               <div class="card-footer">
                 <div class="post-author">
@@ -1009,7 +1085,10 @@
                 </div>
                 <h3 class="card-title" style="text-align: center;"><a href="./blog/stemland.html">STEMLAND</a></h3>
                 <p class="card-description justify-text" style="text-align: justify;">
-                  Nested in the serene community of Auroville, STEM Land stands as a shining example of an innovative educational model that encourages exploration, curiosity, and real-world problem-solving. Making childrens to learn everything practically. Childrens are given more importance to practical learning.               </p>
+                  Nested in the serene community of Auroville, STEM Land stands as a shining example of an innovative
+                  educational model that encourages exploration, curiosity, and real-world problem-solving. Making
+                  childrens to learn everything practically. Childrens are given more importance to practical learning.
+                </p>
               </div>
               <div class="card-footer">
                 <div class="post-author">
@@ -1035,9 +1114,12 @@
                     <h6 class="category">Python</h6>
                   </div>
                 </div>
-                <h3 class="card-title" style="text-align: center;"><a href="./blog/python.html">Comprehensive Python</a></h3>
+                <h3 class="card-title" style="text-align: center;"><a href="./blog/python.html">Comprehensive Python</a>
+                </h3>
                 <p class="card-description justify-text" style="text-align: justify;">
-                  Python is a versatile, high-level programming language designed for readability and simplicity. It employs indentation to define code blocks and supports procedural, object-oriented, and functional paradigms.
+                  Python is a versatile, high-level programming language designed for readability and simplicity. It
+                  employs indentation to define code blocks and supports procedural, object-oriented, and functional
+                  paradigms.
               </div>
               <div class="card-footer">
                 <div class="post-author">
@@ -1056,335 +1138,406 @@
       </div>
     </section><!-- End Blog Section -->
 
-<!-- ======= Achivements Section ======= -->
-<section id="Achivements" class="Achivements-mf sect-pt4 route">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="title-box text-center">
-          <h3 class="title-a">
-            ACHIVEMENTS
-          </h3>
-          <p class="subtitle-a">
-            A frequently updated web page for personal commentary.
-          </p>
-          <div class="line-mf"></div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card card-blog justify-text">
-          <div text-align: justify;> <br>
-            <h3>Won 1st place in Hardware Hackathon conducted by Walchand Institute Of Technology, Solapur, Maharastra</h3>
-          </div>
-          <div class="card-img" >
-            <a><img src="" alt="" class="img-fluid"></a>
-          </div>
-          <div class="card-body">
-            <div class="card-category-box">
-              <div class="card-category">
-                <h6 class="category">Hardware Hackathon</h6>
-              </div>
+    <!-- ======= Achivements Section ======= -->
+    <section id="Achivements" class="Achivements-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                ACHIVEMENTS
+              </h3>
+              <p class="subtitle-a">
+                A frequently updated web page for personal commentary.
+              </p>
+              <div class="line-mf"></div>
             </div>
-            <h3 class="card-title justify-text"><a>Traffic Violation System</a></h3>
-            <p class="card-description justify-text" style="text-align: justify;">
-              The network predicts 4 coordinates for each bounding box. 
-              YOLOv8 predicts an objectiveness score for each bounding box using logistic regression. 
-              1 means complete overlap of bounding box prior over the ground truth object. 
-              It will predict only 1 bonding box prior for one ground truth object and any error in this would incur for both classification as well as detection loss.
-              YOLOv8 uses independent logistic classifiers for each class instead of a regular softmax layer. 
-              This is done to make the classification multi-label classification. 
-              Each box predicts the classes the bounding box may contain using multilabel classification.
-            </p>
           </div>
-          
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card card-blog">
-          <div> <br>
-            <h3>Won 2nd place in Hardware Hackathon conducted by Free Software and Hardware Movement(FSHM) on Freedom Software Day</h3>
-          </div>
-          <div class="card-img">
-            <a><img src="" alt="" class="img-fluid"></a>
-          </div>
-          <div class="card-body">
-            <div class="card-category-box">
-              <div class="card-category">
-                <h6 class="category">Hardware Hackathon</h6>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card card-blog justify-text">
+              <div text-align: justify;> <br>
+                <h3>Won 1st place in Hardware Hackathon conducted by Walchand Institute Of Technology, Solapur,
+                  Maharastra</h3>
               </div>
-            </div>
-            <h3 class="card-title"><a>Weather Station</a></h3>
-            <p class="card-descriptionjustify-text" style="text-align: justify;">
-              A weather station is a collection of instruments and sensors that measure atmospheric and soil conditions. 
-              Commonly measured environmental variables include light, temperature, relative humidity, rain, and wind. 
-              Soil conditions include soil moisture, soil temperature, and soil bulk electrical conductivity.
-              The weather station helped take preventive measures against destructive rains, strong winds, severe high or low temperatures, and pests and diseases. 
-              Using a weather station helps you cope with frost and high temperatures in summer.
-            </p>
-          </div>
-          
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card card-blog">
-          <div> <br>
-            <h3>Top 5 in Green House Hackathon Conducted by AlgoBharath Foundation</h3>
-          </div>
-          <div class="card-img">
-            <a><img src="" alt="" class="img-fluid"></a>
-          </div>
-          <div class="card-body">
-            <div class="card-category-box">
-              <div class="card-category">
-                <h6 class="category">ALGORAND</h6>
+              <div class="card-img">
+                <a><img src="" alt="" class="img-fluid"></a>
               </div>
-            </div>
-            <h3 class="card-title"><a>Green House Hackathon</a></h3>
-            <p class="card-description justify-text" style="text-align: justify;">
-              A smart contract auction system uses blockchain technology, particularly Ethereum's Solidity language, to automate and secure the bidding process. Smart contracts define key rules, such as bid increments, auction start/end times, and the winning criteria, ensuring fairness and transparency. The contract interacts with decentralized storage (like IPFS) for asset management and employs functions such as transfer(), require(), and emit to handle payments and asset transfers securely. By removing intermediaries, the system ensures decentralization, immutability, and trustless execution. Additionally, the smart contract ensures all transactions are transparent, tamper-proof, and executed automatically when predefined conditions are met.          </div>
-          
-        </div>
-      </div> 
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="title-box text-center">
-            <h3 class="title-a">
-              EXPERIENCE
-            </h3>
-            <div class="line-mf"></div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card card-blog title-box text-center">
-          <div> <BR></BR>
-            <h3>Technosprint Info Solution</h3>
-          </div>
-          <div class="card-img">
-            <a><img src="" alt="" class="img-fluid"></a>
-          </div>
-          <div class="card-body">
-            <div class="card-category-box">
-              <div class="card-category">
-                <h6 class="category">INTERNSHIP</h6>
-              </div>
-            </div>
-            <p class="card-description justify-text" style="text-align: justify;">
-              During my 10-month tenure as an Associate Trainee and 1-year experience as a Research and Development (R&D) professional, I gained valuable hands-on experience in client management and technology implementation. I developed skills in cloud computing, blockchain, and IoT, while collaborating on innovative projects. One key project I contributed to involved building and implementing an RFID-based solution, which streamlined operations and enhanced system efficiency. This experience honed my problem-solving, technical, and communication abilities, equipping me to manage client requirements, work with emerging technologies, and deliver impactful solutions in dynamic, fast-paced environments.
-            </p>
-          </div>
-          
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card card-blog title-box text-center">
-          <div> <BR></BR>
-            <h3>Pantech Solutions</h3>
-          </div>
-          <div class="card-img">
-            <a><img src="" alt="" class="img-fluid"></a>
-          </div>
-          <div class="card-body">
-            <div class="card-category-box">
-              <div class="card-category">
-                <h6 class="category">INTERNSHIP</h6>
-              </div>
-            </div>
-            <p class="card-description justify-text" style="text-align: justify;">
-              During my 1-month internship at Pantech Solutions in the field of Artificial Intelligence (AI), I gained foundational knowledge in AI concepts, machine learning algorithms, and data processing techniques. I worked closely with the team on a mini-project, where I applied AI principles to real-world problems, gaining hands-on experience in model development, data analysis, and optimization. This opportunity allowed me to learn about the practical applications of AI, such as predictive analytics and automation, while enhancing my technical skills and problem-solving abilities. The experience also strengthened my understanding of AI tools and frameworks, laying the foundation for future projects.
-            </p>
-          </div>
-          
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card card-blog title-box text-center">
-          <div> <BR></BR>
-            <h3>COOPON SCITECH LLP</h3>
-          </div>
-          <div class="card-img">
-            <a><img src="" alt="" class="img-fluid"></a>
-          </div>
-          <div class="card-body">
-            <div class="card-category-box">
-              <div class="card-category">
-                <h6 class="category">INTERNSHIP</h6>
-              </div>
-            </div>
-            <p class="card-description justify-text" style="text-align: justify;">
-              I have experience in web application hosting and deployment, utilizing full-stack development skills with technologies like Python, PHP, ReactJS, and jQuery. This includes building dynamic and responsive front-end interfaces with ReactJS, while developing robust back-end systems with Python and PHP. I am proficient in deploying applications on cloud platforms, ensuring scalability, security, and performance. My ability to independently tackle new challenges and solve problems efficiently has been a key strength. I continuously adapt to evolving technologies and requirements, ensuring that each project I work on is both functional and optimized for the best user experience.            </p>
-          </div>
-          
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card card-blog title-box text-center">
-          <div> <BR></BR>
-            <h3>RM SKYTECH</h3>
-          </div>
-          <div class="card-img">
-            <a><img src="" alt="" class="img-fluid"></a>
-          </div>
-          <div class="card-body">
-            <div class="card-category-box">
-              <div class="card-category">
-                <h6 class="category">TRAINER</h6>
-              </div>
-            </div>
-            <p class="card-description justify-text" style="text-align: justify;">
-              As a Python Trainer at RMSKYTECH, I had the opportunity to guide college students through the fundamentals and advanced concepts of Python programming. I designed and delivered comprehensive lessons on topics such as data structures, object-oriented programming, file handling, and libraries like NumPy and Pandas. My role involved creating hands-on assignments, quizzes, and real-world projects to help students develop practical coding skills. I emphasized problem-solving, logical thinking, and the application of Python in various domains, ensuring students gained both theoretical knowledge and practical expertise for their future careers. The experience reinforced my passion for teaching and mentoring.            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card card-blog title-box text-center">
-          <div> <BR></BR>
-            <h3>FITA ACADEMY</h3>
-          </div>
-          <div class="card-img">
-            <a><img src="" alt="" class="img-fluid"></a>
-          </div>
-          <div class="card-body">
-            <div class="card-category-box">
-              <div class="card-category">
-                <h6 class="category">TRAINER</h6>
-              </div>
-            </div>
-            <p class="card-description justify-text" style="text-align: justify;">
-              At FITA Academy, I worked as a trainer across multiple domains, including Python Full Stack, Data Science, Data Analytics, Web Development, Power BI, React JS, React Native (Android), and Cybersecurity. I designed and delivered comprehensive training programs, focusing on both theoretical concepts and hands-on practical applications. My role involved teaching students how to build full-stack web applications, analyze and visualize data, and implement cybersecurity practices. I also guided students through building mobile apps using React Native and Power BI dashboards. Through these diverse subjects, I helped students develop well-rounded technical skills, preparing them for real-world challenges in the tech industry.          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card card-blog title-box text-center">
-          <div> <BR></BR>
-            <h3>HUBO SOLUTIONS</h3>
-          </div>
-          <div class="card-img">
-            <a><img src="" alt="" class="img-fluid"></a>
-          </div>
-          <div class="card-body">
-            <div class="card-category-box">
-              <div class="card-category">
-                <h6 class="category">PROJECT MANAGER</h6>
-              </div>
-            </div>
-            <p class="card-description justify-text" style="text-align: justify;">
-              As a Project Manager at Hubo Solutions, I led cross-functional teams to deliver high-quality projects within scope, time, and budget constraints. My role involved overseeing project planning, resource allocation, and risk management while ensuring effective communication between stakeholders. I coordinated project timelines, tracked progress, and ensured alignment with client requirements and business goals. Additionally, I facilitated agile methodologies, managed project documentation, and conducted regular meetings to address challenges and maintain project momentum. This experience honed my leadership, problem-solving, and organizational skills, allowing me to drive project success while ensuring client satisfaction and team efficiency.        </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card card-blog title-box text-center">
-          <div> <BR></BR>
-            <h3>ALME MATER</h3>
-          </div>
-          <div class="card-img">
-            <a><img src="" alt="" class="img-fluid"></a>
-          </div>
-          <div class="card-body">
-            <div class="card-category-box">
-              <div class="card-category">
-                <h6 class="category">DEVELOPER</h6>
-              </div>
-            </div>
-            <p class="card-description justify-text" style="text-align: justify;">
-              At Almemater, I worked as both a Smart Contract Developer and a React JS Developer, where I gained hands-on experience in blockchain technology and front-end development. As a Smart Contract Developer, I wrote and deployed smart contracts using Solidity on Ethereum, ensuring secure and transparent transactions for decentralized applications. In my React JS role, I built dynamic, user-friendly interfaces, focusing on responsiveness and smooth user experiences. I collaborated closely with cross-functional teams, ensuring seamless integration between the front-end and blockchain components. This role allowed me to develop expertise in both blockchain development and modern web technologies, strengthening my full-stack development capabilities.        </div>
-      </div>
-    </div>
-  </div>
-</section><!-- End Blog Section -->
-
-<!-- ======= Contact Section ======= -->
-<section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
-  <div class="overlay-mf"></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="contact-mf">
-          <div id="contact" class="box-shadow-full">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="title-box-2">
-                  <h5 class="title-left">
-                    Send Message Us
-                  </h5>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Hardware Hackathon</h6>
+                  </div>
                 </div>
-                <div>
-                  <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                    <div class="row">
-                      <div class="col-md-12 mb-3">
-                        <div class="form-group">
-                          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                        </div>
-                      </div>
-                      <div class="col-md-12 mb-3">
-                        <div class="form-group">
-                          <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                        </div>
-                      </div>
-                      <div class="col-md-12 mb-3">
-                        <div class="form-group">
-                          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                        </div>
-                      </div>
-                      <div class="col-md-12 text-center my-3">
-                        <div class="loading">Loading</div>
-                        <div class="error-message"></div>
-                        <div class="sent-message">Your message has been sent. Thank you!</div>
-                      </div>
-                      <div class="col-md-12 text-center">
-                        <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
-                      </div>
+                <h3 class="card-title justify-text"><a>Traffic Violation System</a></h3>
+                <p class="card-description justify-text" style="text-align: justify;">
+                  The network predicts 4 coordinates for each bounding box.
+                  YOLOv8 predicts an objectiveness score for each bounding box using logistic regression.
+                  1 means complete overlap of bounding box prior over the ground truth object.
+                  It will predict only 1 bonding box prior for one ground truth object and any error in this would incur
+                  for both classification as well as detection loss.
+                  YOLOv8 uses independent logistic classifiers for each class instead of a regular softmax layer.
+                  This is done to make the classification multi-label classification.
+                  Each box predicts the classes the bounding box may contain using multilabel classification.
+                </p>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-blog">
+              <div> <br>
+                <h3>Won 2nd place in Hardware Hackathon conducted by Free Software and Hardware Movement(FSHM) on
+                  Freedom Software Day</h3>
+              </div>
+              <div class="card-img">
+                <a><img src="" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Hardware Hackathon</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a>Weather Station</a></h3>
+                <p class="card-descriptionjustify-text" style="text-align: justify;">
+                  A weather station is a collection of instruments and sensors that measure atmospheric and soil
+                  conditions.
+                  Commonly measured environmental variables include light, temperature, relative humidity, rain, and
+                  wind.
+                  Soil conditions include soil moisture, soil temperature, and soil bulk electrical conductivity.
+                  The weather station helped take preventive measures against destructive rains, strong winds, severe
+                  high or low temperatures, and pests and diseases.
+                  Using a weather station helps you cope with frost and high temperatures in summer.
+                </p>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-blog">
+              <div> <br>
+                <h3>Top 5 in Green House Hackathon Conducted by AlgoBharath Foundation</h3>
+              </div>
+              <div class="card-img">
+                <a><img src="" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">ALGORAND</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a>Green House Hackathon</a></h3>
+                <p class="card-description justify-text" style="text-align: justify;">
+                  A smart contract auction system uses blockchain technology, particularly Ethereum's Solidity language,
+                  to automate and secure the bidding process. Smart contracts define key rules, such as bid increments,
+                  auction start/end times, and the winning criteria, ensuring fairness and transparency. The contract
+                  interacts with decentralized storage (like IPFS) for asset management and employs functions such as
+                  transfer(), require(), and emit to handle payments and asset transfers securely. By removing
+                  intermediaries, the system ensures decentralization, immutability, and trustless execution.
+                  Additionally, the smart contract ensures all transactions are transparent, tamper-proof, and executed
+                  automatically when predefined conditions are met.
+              </div>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="title-box text-center">
+                <h3 class="title-a">
+                  EXPERIENCE
+                </h3>
+                <div class="line-mf"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-blog title-box text-center">
+              <div> <BR></BR>
+                <h3>Technosprint Info Solution</h3>
+              </div>
+              <div class="card-img">
+                <a><img src="" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">INTERNSHIP</h6>
+                  </div>
+                </div>
+                <p class="card-description justify-text" style="text-align: justify;">
+                  During my 10-month tenure as an Associate Trainee and 1-year experience as a Research and Development
+                  (R&D) professional, I gained valuable hands-on experience in client management and technology
+                  implementation. I developed skills in cloud computing, blockchain, and IoT, while collaborating on
+                  innovative projects. One key project I contributed to involved building and implementing an RFID-based
+                  solution, which streamlined operations and enhanced system efficiency. This experience honed my
+                  problem-solving, technical, and communication abilities, equipping me to manage client requirements,
+                  work with emerging technologies, and deliver impactful solutions in dynamic, fast-paced environments.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card card-blog title-box text-center">
+              <div> <BR></BR>
+                <h3>Pantech Solutions</h3>
+              </div>
+              <div class="card-img">
+                <a><img src="" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">INTERNSHIP</h6>
+                  </div>
+                </div>
+                <p class="card-description justify-text" style="text-align: justify;">
+                  During my 1-month internship at Pantech Solutions in the field of Artificial Intelligence (AI), I
+                  gained foundational knowledge in AI concepts, machine learning algorithms, and data processing
+                  techniques. I worked closely with the team on a mini-project, where I applied AI principles to
+                  real-world problems, gaining hands-on experience in model development, data analysis, and
+                  optimization. This opportunity allowed me to learn about the practical applications of AI, such as
+                  predictive analytics and automation, while enhancing my technical skills and problem-solving
+                  abilities. The experience also strengthened my understanding of AI tools and frameworks, laying the
+                  foundation for future projects.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card card-blog title-box text-center">
+              <div> <BR></BR>
+                <h3>COOPON SCITECH LLP</h3>
+              </div>
+              <div class="card-img">
+                <a><img src="" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">INTERNSHIP</h6>
+                  </div>
+                </div>
+                <p class="card-description justify-text" style="text-align: justify;">
+                  I have experience in web application hosting and deployment, utilizing full-stack development skills
+                  with technologies like Python, PHP, ReactJS, and jQuery. This includes building dynamic and responsive
+                  front-end interfaces with ReactJS, while developing robust back-end systems with Python and PHP. I am
+                  proficient in deploying applications on cloud platforms, ensuring scalability, security, and
+                  performance. My ability to independently tackle new challenges and solve problems efficiently has been
+                  a key strength. I continuously adapt to evolving technologies and requirements, ensuring that each
+                  project I work on is both functional and optimized for the best user experience. </p>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-blog title-box text-center">
+              <div> <BR></BR>
+                <h3>RM SKYTECH</h3>
+              </div>
+              <div class="card-img">
+                <a><img src="" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">TRAINER</h6>
+                  </div>
+                </div>
+                <p class="card-description justify-text" style="text-align: justify;">
+                  As a Python Trainer at RMSKYTECH, I had the opportunity to guide college students through the
+                  fundamentals and advanced concepts of Python programming. I designed and delivered comprehensive
+                  lessons on topics such as data structures, object-oriented programming, file handling, and libraries
+                  like NumPy and Pandas. My role involved creating hands-on assignments, quizzes, and real-world
+                  projects to help students develop practical coding skills. I emphasized problem-solving, logical
+                  thinking, and the application of Python in various domains, ensuring students gained both theoretical
+                  knowledge and practical expertise for their future careers. The experience reinforced my passion for
+                  teaching and mentoring. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-blog title-box text-center">
+              <div> <BR></BR>
+                <h3>FITA ACADEMY</h3>
+              </div>
+              <div class="card-img">
+                <a><img src="" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">TRAINER</h6>
+                  </div>
+                </div>
+                <p class="card-description justify-text" style="text-align: justify;">
+                  At FITA Academy, I worked as a trainer across multiple domains, including Python Full Stack, Data
+                  Science, Data Analytics, Web Development, Power BI, React JS, React Native (Android), and
+                  Cybersecurity. I designed and delivered comprehensive training programs, focusing on both theoretical
+                  concepts and hands-on practical applications. My role involved teaching students how to build
+                  full-stack web applications, analyze and visualize data, and implement cybersecurity practices. I also
+                  guided students through building mobile apps using React Native and Power BI dashboards. Through these
+                  diverse subjects, I helped students develop well-rounded technical skills, preparing them for
+                  real-world challenges in the tech industry.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-blog title-box text-center">
+              <div> <BR></BR>
+                <h3>HUBO SOLUTIONS</h3>
+              </div>
+              <div class="card-img">
+                <a><img src="" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">PROJECT MANAGER</h6>
+                  </div>
+                </div>
+                <p class="card-description justify-text" style="text-align: justify;">
+                  As a Project Manager at Hubo Solutions, I led cross-functional teams to deliver high-quality projects
+                  within scope, time, and budget constraints. My role involved overseeing project planning, resource
+                  allocation, and risk management while ensuring effective communication between stakeholders. I
+                  coordinated project timelines, tracked progress, and ensured alignment with client requirements and
+                  business goals. Additionally, I facilitated agile methodologies, managed project documentation, and
+                  conducted regular meetings to address challenges and maintain project momentum. This experience honed
+                  my leadership, problem-solving, and organizational skills, allowing me to drive project success while
+                  ensuring client satisfaction and team efficiency.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-blog title-box text-center">
+              <div> <BR></BR>
+                <h3>ALME MATER</h3>
+              </div>
+              <div class="card-img">
+                <a><img src="" alt="" class="img-fluid"></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">DEVELOPER</h6>
+                  </div>
+                </div>
+                <p class="card-description justify-text" style="text-align: justify;">
+                  At Almemater, I worked as both a Smart Contract Developer and a React JS Developer, where I gained
+                  hands-on experience in blockchain technology and front-end development. As a Smart Contract Developer,
+                  I wrote and deployed smart contracts using Solidity on Ethereum, ensuring secure and transparent
+                  transactions for decentralized applications. In my React JS role, I built dynamic, user-friendly
+                  interfaces, focusing on responsiveness and smooth user experiences. I collaborated closely with
+                  cross-functional teams, ensuring seamless integration between the front-end and blockchain components.
+                  This role allowed me to develop expertise in both blockchain development and modern web technologies,
+                  strengthening my full-stack development capabilities.
+              </div>
+            </div>
+          </div>
+        </div>
+    </section><!-- End Blog Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route"
+      style="background-image: url(assets/img/overlay-bg.jpg)">
+      <div class="overlay-mf"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="contact-mf">
+              <div id="contact" class="box-shadow-full">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="title-box-2">
+                      <h5 class="title-left">
+                        Send Message Us
+                      </h5>
                     </div>
-                  </form>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="title-box-2 pt-4 pt-md-0">
-                  <h5 class="title-left">
-                    Get in Touch
-                  </h5>
-                </div>
-                <div class="more-info">
-                  <p class="lead">
-                    To secure a challenging position in a reputed organization
-                    to expand my learnings, knowledge, and skills. Secure a
-                    responsible career opportunity to fully utilize my training
-                    and skills, while making a significant contribution to the
-                    success.
-                  </p>
-                  <ul class="list-ico">
-                    <li><span class="bi bi-geo-alt"></span> 14, 4th Main Road,Muthrapalayam, Puducherry 605 006 </li>
-                    <li><span class="bi bi-phone"></span> (+91) 75300-87588</li>
-                    <li><span class="bi bi-envelope"></span> atchudhan17@gmail.com</li>
-                  </ul>
-                </div>
-                <div class="socials">
-                  <ul>
-                    <li><a href="https://www.facebook.com/atchudhan.atchudhan?mibextid=ZbWKwL"><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li>
-                    <li><a href="https://www.instagram.com/invites/contact/?i=1smqdqmk8ieht&utm_content=2snqxms"><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
-                    <li><a href="https://x.com/atchudhan1712?t=jdTIaFrzn-o9jtG-zGC_7A&s=09"><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
-                    <li><a href="https://www.linkedin.com/in/atchudhan-s-6b60a6284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
-                  </ul>
+                    <form action="https://atchudhan.pages.dev/" method="POST">
+                      <!-- REQUIRED: your Web3Forms access key -->
+                      <input type="hidden" name="access_key" value="d73e61af-48f4-4755-88c4-83eff097687f">
+
+                      <div class="row">
+                        <div class="col-md-12 mb-3">
+                          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                            required>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                          <input type="email" name="email" class="form-control" id="email" placeholder="Your Email"
+                            required>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                          <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject"
+                            required>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                          <textarea name="message" class="form-control" rows="5" placeholder="Message"
+                            required></textarea>
+                        </div>
+
+                        <!-- optional honeypot to reduce spam -->
+                        <input type="checkbox" name="botcheck" style="display:none;">
+
+                        <div class="col-md-12 text-center my-3">
+                          <button type="submit" class="button button-a button-big button-rounded">
+                            Send Message
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+
+                  </div>
+                  <div class="col-md-6">
+                    <div class="title-box-2 pt-4 pt-md-0">
+                      <h5 class="title-left">
+                        Get in Touch
+                      </h5>
+                    </div>
+                    <div class="more-info">
+                      <p class="lead">
+                        To secure a challenging position in a reputed organization
+                        to expand my learnings, knowledge, and skills. Secure a
+                        responsible career opportunity to fully utilize my training
+                        and skills, while making a significant contribution to the
+                        success.
+                      </p>
+                      <ul class="list-ico">
+                        <li><span class="bi bi-geo-alt"></span> 14, 4th Main Road,Muthrapalayam, Puducherry 605 006
+                        </li>
+                        <li><span class="bi bi-phone"></span> (+91) 75300-87588</li>
+                        <li><span class="bi bi-envelope"></span> atchudhan17@gmail.com</li>
+                      </ul>
+                    </div>
+                    <div class="socials">
+                      <ul>
+                        <li><a href="https://www.facebook.com/atchudhan.atchudhan?mibextid=ZbWKwL"><span
+                              class="ico-circle"><i class="bi bi-facebook"></i></span></a></li>
+                        <li><a
+                            href="https://www.instagram.com/invites/contact/?i=1smqdqmk8ieht&utm_content=2snqxms"><span
+                              class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
+                        <li><a href="https://x.com/atchudhan1712?t=jdTIaFrzn-o9jtG-zGC_7A&s=09"><span
+                              class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
+                        <li><a
+                            href="https://www.linkedin.com/in/atchudhan-s-6b60a6284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><span
+                              class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section><!-- End Contact Section -->
+    </section><!-- End Contact Section -->
 
-</main><!-- End #main -->
+  </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer>
@@ -1410,7 +1563,8 @@
 
 
   <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -1422,7 +1576,13 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script>
+    const form = document.querySelector('#contact form');
+    form.addEventListener('submit', () => {
+      const btn = form.querySelector('button[type="submit"]');
+      btn.classList.add('button-loading');
+    });
+  </script>
 </body>
 
 </html>
