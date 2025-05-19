@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comprehensive Python Programming Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" />
+    <style>
+        body { font-family: 'Roboto', Arial, sans-serif; background: #e3f0ff; color: #1a2634; margin: 0; padding: 0; }
+        header { background: linear-gradient(90deg, #1976d2 0%, #42a5f5 100%); color: #fff; padding: 2rem 0 1rem; text-align: center; }
+        header h1 { margin: 0; font-size: 2.5rem; }
+        header p { margin: 0.5rem 0 0; font-size: 1.2rem; color: #e3eefd; }
+        main { max-width: 900px; margin: 2rem auto; background: #fff; border-radius: 1rem; box-shadow: 0 4px 24px rgba(25,118,210,0.1); padding: 2rem; }
+        h2 { color: #1976d2; margin-top: 2rem; }
+        h3 { color: #1976d2; margin-top: 1.5rem; }
+        pre { background: #152238; border-radius: 0.75rem; padding: 1rem; overflow-x: auto; margin: 1rem 0; }
+        code { font-family: 'Fira Mono', monospace; }
+        ul { margin-left: 1.5rem; }
+        .note { background: #e3eefd; border-left: 5px solid #1976d2; padding: 1rem; border-radius: 0.5rem; margin: 1.5rem 0; }
+        @media (max-width: 600px) { main { padding: 1rem; } header h1 { font-size: 1.75rem; } }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Comprehensive Python Programming Guide</h1>
+    <p>Everything You Need to Know to Get Started and Master the Basics</p>
+</header>
+<main>
+    <section id="toc">
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#introduction">Introduction to Python</a></li>
+            <li><a href="#basics">Important Programming Basics</a></li>
+            <li><a href="#control">Loops &amp; Control Statements</a></li>
+            <li><a href="#functions-modules">Functions, Modules &amp; Packages</a></li>
+            <li><a href="#data-structures">Data Structures in Python</a></li>
+            <li><a href="#exceptions">Exception Handling</a></li>
+            <li><a href="#multithreading">Multithreading &amp; Multiprocessing</a></li>
+            <li><a href="#file-io">File Handling (I/O)</a></li>
+            <li><a href="#collections">Collections</a></li>
+            <li><a href="#oop">Object Oriented Programming</a></li>
+            <li><a href="#regex">Regular Expressions</a></li>
+        </ul>
+    </section>
+
+    <section id="introduction">
+        <h2>Introduction to Python</h2>
+        <h3>What is Python?</h3>
+        <p>Python is a versatile, high-level programming language designed for readability and simplicity. It employs indentation to define code blocks and supports procedural, object-oriented, and functional paradigms.</p>
+        <h3>History of Python</h3>
+        <p>Created by Guido van Rossum and released in 1991, Python has evolved through versions 2.x (legacy) to 3.x (current). Python 3.0 (2008) addressed design flaws and improved Unicode support.</p>
+        <h3>Unique Features of Python</h3>
+        <ul>
+            <li><b>Readable Syntax:</b> Easy to learn and maintain.</li>
+            <li><b>Rich Standard Library:</b> Modules for file I/O, networking, threading.</li>
+            <li><b>Cross-Platform:</b> Windows, macOS, Linux support.</li>
+            <li><b>Extensible:</b> Integrate with C/C++ for performance-critical code.</li>
+            <li><b>Community:</b> Vast ecosystem of packages on PyPI.</li>
+        </ul>
+        <h3>Python 2 vs Python 3</h3>
+        <ul>
+            <li><b>Print:</b> Python 2 uses <code>print "Hello"</code>, Python 3 uses <code>print("Hello")</code>.</li>
+            <li><b>Division:</b> <code>5/2</code> yields <code>2</code> in 2.x, but <code>2.5</code> in 3.x.</li>
+            <li><b>Unicode:</b> Strings are Unicode by default in Python 3.</li>
+            <li><b>Library Support:</b> Most new libraries support Python 3 only.</li>
+        </ul>
+        <h3>Installing Python</h3>
+        <p>Download the installer from <a href="https://www.python.org/downloads/" target="_blank">python.org</a>. On Windows, check "Add Python to PATH"; on macOS/Linux, use package managers like Homebrew or apt.</p>
+        <h3>Setting Up Development Environment</h3>
+        <p>Use an IDE or editor (e.g., VS Code, PyCharm). Configure linting (<code>flake8</code>) and formatting (<code>black</code>) extensions to enforce code style and catch errors early.</p>
+    </section>
+
+    <section id="basics">
+        <h2>Important Programming Basics</h2>
+        <h3>Python Keywords and Indentation</h3>
+        <p>Python reserves words like <code>def</code>, <code>return</code>, <code>if</code>, <code>for</code>. Indentation (standard 4 spaces) defines blocks instead of braces.</p>
+        <h3>Comments</h3>
+        <pre><code class="language-python"># Single-line comment
+"""
+Multi-line comment or docstring,
+used to document modules and functions.
+"""
+        </code></pre>
+        <p>Use <code>#</code> for inline comments. Triple-quoted strings at the top of modules, classes, or functions serve as documentation.</p>
+        <h3>Basic Data Types</h3>
+        <ul>
+            <li><code>int</code>: Integer numbers (e.g., <code>42</code>).</li>
+            <li><code>float</code>: Decimal numbers (e.g., <code>3.14</code>).</li>
+            <li><code>str</code>: Text strings (e.g., <code>"Hello"</code>).</li>
+            <li><code>bool</code>: <code>True</code> or <code>False</code>.</li>
+            <li><code>None</code>: Represents absence of value.</li>
+        </ul>
+        <h3>Variables</h3>
+        <pre><code class="language-python">x = 10         # int assigned dynamically
+name = "Umar"  # string variable
+is_active = True # boolean
+        </code></pre>
+        <p>Variables are created on assignment; types are inferred at runtime.</p>
+        <h3>Operators</h3>
+        <p>Arithmetic (<code>+ - * / // % **</code>), comparison (<code>== != &gt; &lt; >= <=</code>), logical (<code>and, or, not</code>), bitwise (<code>& | ^ ~ << >></code>), membership (<code>in, not in</code>), identity (<code>is, is not</code>).</p>
+        <h3>Strings</h3>
+        <pre><code class="language-python">s = "Hello, Python!"
+print(s[0], s[-1])       # H !
+print(s.upper(), s.lower())  # HELLO, PYTHON! hello, python!
+print(s.replace("Python", "World"))  # Hello, World!
+        </code></pre>
+        <p>Strings are immutable. Use slicing (<code>s[start:end]</code>) and methods (<code>.strip(), .split(), .find()</code>) for manipulation.</p>
+        <h3>Getting User Input</h3>
+        <pre><code class="language-python">age = input("Enter your age: ")
+age = int(age)  # Convert to integer
+print(f"You are {age} years old.")
+        </code></pre>
+        <p><code>input()</code> returns a string. Convert types explicitly when needed.</p>
+        <h3>First Program</h3>
+        <pre><code class="language-python">print("Hello, World!")
+        </code></pre>
+        <p>Outputs text to the console using the <code>print()</code> function.</p>
+    </section>
+
+    <section id="control">
+        <h2>Loops &amp; Control Statements</h2>
+        <h3>Control Structures</h3>
+        <h4>Simple if</h4>
+        <pre><code class="language-python">x = 5
+if x > 0:
+    print("Positive")
+        </code></pre>
+        <p>The <code>if</code> statement executes its block only if the condition is <code>True</code>.</p>
+        <h4>if-else</h4>
+        <pre><code class="language-python">if x % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+        </code></pre>
+        <p><code>else</code> runs when <code>if</code> is <code>False</code>.</p>
+        <h4>Nested if</h4>
+        <pre><code class="language-python">if x > 0:
+    if x < 10:
+        print("1-9")
+    else:
+        print(">=10")
+        </code></pre>
+        <p>You can nest <code>if</code> blocks for multiple checks.</p>
+        <h4>if-elif-else</h4>
+        <pre><code class="language-python">if x < 0:
+    print("Negative")
+elif x == 0:
+    print("Zero")
+else:
+    print("Positive")
+        </code></pre>
+        <p><code>elif</code> allows chaining multiple conditions.</p>
+        <h3>Loops</h3>
+        <h4>for loop</h4>
+        <pre><code class="language-python">for i in range(5):
+    print(i)
+        </code></pre>
+        <p><code>range(n)</code> yields 0 to n-1; <code>for</code> iterates over any sequence.</p>
+        <h4>while loop</h4>
+        <pre><code class="language-python">count = 0
+while count < 5:
+    print(count)
+    count += 1
+        </code></pre>
+        <p><code>while</code> repeats as long as its condition holds true. Ensure loop variables update to avoid infinite loops.</p>
+        <h3>Break &amp; Continue</h3>
+        <pre><code class="language-python">for i in range(10):
+    if i == 5:
+        break      # Exit loop completely
+    if i % 2 == 0:
+        continue   # Skip to next iteration
+    print(i)
+        </code></pre>
+        <p><code>break</code> stops the loop; <code>continue</code> skips the rest of the current iteration.</p>
+    </section>
+
+    <section id="functions-modules">
+        <h2>Functions, Modules &amp; Packages</h2>
+        <h3>User-Defined Functions</h3>
+        <pre><code class="language-python">def greet(name):
+    """Return a greeting message for name."""
+    return f"Hello, {name}!"
+
+message = greet("Umar")
+print(message)
+        </code></pre>
+        <p>Functions encapsulate code for reuse. Docstrings describe their purpose.</p>
+        <h3>Function Parameters &amp; Scope</h3>
+        <p>Parameters can be positional, keyword, default, or variable-length (<code>*args</code>, <code>**kwargs</code>). Variables inside are local; use <code>global</code> to modify globals.</p>
+        <h3>Lambda Functions</h3>
+        <pre><code class="language-python">add = lambda a, b: a + b
+print(add(3, 4))  # Outputs 7
+        </code></pre>
+        <p><code>lambda</code> creates small anonymous functions inline.</p>
+        <h3>Modules &amp; Namespaces</h3>
+        <pre><code class="language-python"># my_module.py
+PI = 3.14
+
+def area(radius):
+    return PI * radius ** 2
+
+# main.py
+import my_module
+print(my_module.area(5))
+
+from my_module import area, PI
+print(area(3))
+        </code></pre>
+        <p>Modules (.py files) group related code. Use <code>import</code> to access names. Namespaces prevent collisions.</p>
+        <p>The <code>if __name__ == "__main__":</code> block runs code only when the module is executed directly, not when imported.</p>
+        <h3>Packages</h3>
+        <p>Packages are directories with an <code>__init__.py</code> file, enabling hierarchical module organization. Install third-party packages via <code>pip install package-name</code>.</p>
+    </section>
+
+    <section id="data-structures">
+        <h2>Data Structures in Python</h2>
+        <h3>Lists</h3>
+        <pre><code class="language-python">fruits = ["apple", "banana", "cherry"]
+fruits.append("date")       # Add at end
+print(fruits[1])              # Access by index
+        </code></pre>
+        <p>Lists are ordered, mutable collections. Support indexing, slicing, and methods like <code>append()</code>, <code>remove()</code>, <code>sort()</code>.</p>
+        <h4>Lists as Stacks</h4>
+        <pre><code class="language-python">stack = []
+stack.append(1)
+stack.append(2)
+print(stack.pop())  # LIFO behavior: outputs 2
+        </code></pre>
+        <h4>Lists as Queues</h4>
+        <pre><code class="language-python">from collections import deque
+queue = deque()
+queue.append(1)
+queue.append(2)
+print(queue.popleft())  # FIFO behavior: outputs 1
+        </code></pre>
+        <h3>Tuples</h3>
+        <pre><code class="language-python">point = (10, 20)
+print(point[0])  # Immutable sequence
+        </code></pre>
+        <p>Tuples are ordered, immutable sequences used for fixed collections.</p>
+        <h3>del Statement</h3>
+        <pre><code class="language-python">del fruits[0]  # Remove first item
+del fruits      # Delete entire list
+        </code></pre>
+        <p><code>del</code> removes items or entire variables.</p>
+        <h3>Iterators &amp; Generators</h3>
+        <pre><code class="language-python"># Iterator example
+nums = [1, 2, 3]
+it = iter(nums)
+print(next(it))  # 1
+
+# Generator example
+def gen(n):
+    for i in range(n):
+        yield i
+for val in gen(3):
+    print(val)
+        </code></pre>
+        <p>Iterators traverse collections. Generators create iterators with <code>yield</code>, saving memory.</p>
+        <h3>Comprehensions</h3>
+        <pre><code class="language-python">squares = [x**2 for x in range(5)]
+evens = {x: x%2==0 for x in range(5)}
+        </code></pre>
+        <p>List, dict, and set comprehensions provide concise syntax for transforming iterables.</p>
+        <h3>Ranges</h3>
+        <pre><code class="language-python">for i in range(1, 10, 2):
+    print(i)  # 1,3,5,7,9
+        </code></pre>
+        <p><code>range(start, stop, step)</code> generates arithmetic sequences without storing them.</p>
+        <h3>Dictionaries</h3>
+        <pre><code class="language-python">student = {"name": "Bob", "age": 21}
+print(student.get("name"))
+student["grade"] = "A"
+for key, val in student.items():
+    print(key, val)
+        </code></pre>
+        <p>Dictionaries map keys to values. Use <code>dict.keys(), .values(), .items()</code> to iterate.</p>
+        <h3>Sets</h3>
+        <pre><code class="language-python">s = {1, 2, 3}
+s.add(4)
+s.remove(2)
+print(3 in s)
+        </code></pre>
+        <p>Sets store unique unordered elements. Support union (<code>|</code>), intersection (<code>&</code>), difference (<code>-</code>).</p>
+    </section>
+
+    <section id="exceptions">
+        <h2>Exception Handling in Python</h2>
+        <h3>Raising Exceptions</h3>
+        <pre><code class="language-python">raise ValueError("Invalid value")
+        </code></pre>
+        <p><code>raise</code> manually triggers exceptions to signal errors.</p>
+        <h3>Handling Exceptions</h3>
+        <pre><code class="language-python">try:
+    x = int(input())
+except ValueError:
+    print("Please enter an integer.")
+else:
+    print("You entered", x)
+finally:
+    print("Execution completed.")
+        </code></pre>
+        <p><code>try</code> wraps code that may fail, <code>except</code> handles specific errors, <code>else</code> runs if no errors, <code>finally</code> always executes.</p>
+        <h3>Custom Exceptions</h3>
+        <pre><code class="language-python">class MyError(Exception):
+    """Custom exception type."""
+    pass
+
+raise MyError("Something went wrong")
+        </code></pre>
+        <p>Define custom exception classes by subclassing <code>Exception</code>.</p>
+    </section>
+
+    <section id="multithreading">
+        <h2>Multithreading &amp; Multiprocessing</h2>
+        <h3>Creating Threads</h3>
+        <pre><code class="language-python">import threading
+
+def worker(id):
+    print(f"Worker {id}")
+
+threads = []
+for i in range(3):
+    t = threading.Thread(target=worker, args=(i,))
+    threads.append(t)
+    t.start()
+        </code></pre>
+        <p>Threads run concurrently within a process. Use <code>threading.Thread</code> to start them.</p>
+        <h3>Thread Synchronization</h3>
+        <pre><code class="language-python">lock = threading.Lock()
+
+def safe_increment():
+    with lock:
+        # only one thread can execute this block at a time
+        global counter
+        counter += 1
+        </code></pre>
+        <p>Use locks to prevent race conditions when accessing shared resources.</p>
+        <h3>Thread Pools</h3>
+        <pre><code class="language-python">from concurrent.futures import ThreadPoolExecutor
+
+with ThreadPoolExecutor(max_workers=5) as executor:
+    executor.map(worker, range(5))
+        </code></pre>
+        <p><code>ThreadPoolExecutor</code> manages a pool of worker threads.</p>
+        <h3>Multiprocessing Module</h3>
+        <pre><code class="language-python">from multiprocessing import Process
+
+def task(id):
+    print(f"Process {id}")
+
+if __name__ == "__main__":
+    processes = []
+    for i in range(3):
+        p = Process(target=task, args=(i,))
+        processes.append(p)
+        p.start()
+        </code></pre>
+        <p><code>multiprocessing</code> runs separate processes, bypassing the GIL for CPU-bound tasks.</p>
+    </section>
+
+    <section id="file-io">
+        <h2>File Handling (I/O)</h2>
+        <h3>Reading Text Files</h3>
+        <pre><code class="language-python">with open('data.txt', 'r') as f:
+    contents = f.read()
+    print(contents)
+        </code></pre>
+        <p><code>open()</code> with <code>'r'</code> mode reads entire file into memory.</p>
+        <h3>Writing Text Files</h3>
+        <pre><code class="language-python">with open('out.txt', 'w') as f:
+    f.write("Hello, file!\n")
+        </code></pre>
+        <p><code>'w'</code> mode creates/truncates file. Use <code>'a'</code> to append.</p>
+        <h3>Binary Files &amp; Pickle</h3>
+        <pre><code class="language-python">import pickle
+
+data = {'a': 1, 'b': 2}
+with open('data.pkl', 'wb') as f:
+    pickle.dump(data, f)
+
+with open('data.pkl', 'rb') as f:
+    loaded = pickle.load(f)
+        </code></pre>
+        <p>Pickle serializes objects to bytes; use <code>'wb'</code> and <code>'rb'</code> modes.</p>
+    </section>
+
+    <section id="collections">
+        <h2>Collections in Python</h2>
+        <p>The <code>collections</code> module provides specialized data types:</p>
+        <ul>
+            <li><code>namedtuple</code>: Tuple with named fields.</li>
+            <li><code>deque</code>: Double-ended queue for fast appends/pops.</li>
+            <li><code>Counter</code>: Counts hashable objects.</li>
+            <li><code>OrderedDict</code>: Dict that remembers insertion order.</li>
+            <li><code>defaultdict</code>: Dict with default value types.</li>
+        </ul>
+    </section>
+
+    <section id="oop">
+        <h2>Object Oriented Programming</h2>
+        <h3>Defining Classes</h3>
+        <pre><code class="language-python">class Person:
+    """A simple class representing a person."""
+    species = "Homo sapiens"  # Class attribute
+
+    def __init__(self, name, age):
+        self.name = name  # Instance attribute
+        self.age = age
+
+    def greet(self):
+        print(f"Hello, I am {self.name}.")
+        </code></pre>
+        <p><code>__init__</code> initializes new objects. <code>self</code> refers to the instance.</p>
+        <h3>Encapsulation</h3>
+        <p>Use <code>_protected</code> and <code>__private</code> prefixes to signal intended privacy.</p>
+        <h3>Inheritance</h3>
+        <pre><code class="language-python">class Student(Person):
+    def __init__(self, name, age, student_id):
+        super().__init__(name, age)
+        self.student_id = student_id
+        </code></pre>
+        <p><code>super()</code> calls base class methods.</p>
+        <h3>Polymorphism</h3>
+        <p>Different classes can implement the same method names, allowing interchangeable usage.</p>
+        <h3>Built-In Class Attributes</h3>
+        <ul>
+            <li><code>__dict__</code>: Attribute dictionary.</li>
+            <li><code>__doc__</code>: Docstring.</li>
+            <li><code>__module__</code>: Defining module.</li>
+        </ul>
+        <h3>Destroying Objects</h3>
+        <pre><code class="language-python">del person_instance  # Deletes reference to the object
+        </code></pre>
+    </section>
+
+    <section id="regex">
+        <h2>Regular Expressions</h2>
+        <h3>What Are Regular Expressions?</h3>
+        <p>Patterns to match character combinations in strings, handled by the <code>re</code> module.</p>
+        <h3>match() vs search()</h3>
+        <pre><code class="language-python">import re
+m = re.match(r"\d+", "123abc")   # Matches at start
+s = re.search(r"abc", "123abc")  # Searches anywhere
+        </code></pre>
+        <p><code>match()</code> checks only at the beginning, <code>search()</code> scans the string.</p>
+        <h3>Search and Replace</h3>
+        <pre><code class="language-python">re.sub(r"\d+", "<num>", "ID123")  # Replaces digits with <num>
+        </code></pre>
+        <p><code>sub()</code> replaces all occurrences of the pattern.</p>
+        <h3>Wildcards &amp; Quantifiers</h3>
+        <pre><code class="language-python"># . matches any char, * zero or more, + one or more
+pattern = r"a.*?b"  # Non-greedy match from a to b
+re.findall(pattern, "aXb aYYb")  # ['aXb', 'aYYb']
+        </code></pre>
+        <p>Quantifiers (<code>?, *, +, {{m,n}}</code>) control repetition. Use <code>?</code> after to make them non-greedy.</p>
+    </section>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+</body>
+</html>
